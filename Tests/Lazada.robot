@@ -16,23 +16,23 @@ ${ITEM_CATEGORY} =    Sports Shoes and Clothing
 *** Test Cases ***
 Logged out user should be able to search for products
     [Documentation]    TC#1
-    [Tags]    Smoke
+    [Tags]    Smoke Search
     LazadaProduct.Search For Products
 
 Search results page should contain 40 products
     [Documentation]    TC#2
-    [Tags]    Smoke
+    [Tags]    Smoke Search results
     LazadaProduct.Verify Search Results Products Count    40
 
 Logged out user should be able to view a product
     [Documentation]    TC#3
-    [Tags]    Smoke
+    [Tags]    Smoke Product
 #    LazadaProduct.Search For Products
     LazadaProduct.Select Product from Search Results
 
 Logged out user should sign in to add product to cart
     [Documentation]    TC#4
-    [Tags]    Smoke
+    [Tags]    Smoke Add to cart
 #    LazadaProduct.Search For Products
 #    LazadaProduct.Select Product from Search Results
     LazadaProduct.Add Product to Cart
